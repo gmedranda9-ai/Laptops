@@ -248,7 +248,7 @@
 
 <script>
 /* ====== CONFIG: cambia tu número de WhatsApp aquí (con código país, sin + ni espacios) ====== */
-const WHATSAPP = "593982354338";
+const WHATSAPP = "593999999999";
 
 /* ====== DATA ====== */
 const items = [
@@ -280,17 +280,31 @@ const items = [
    specs:["AMD <b>Ryzen 7</b>","<b>16GB</b>","<b>1TB</b> SSD","15.6\""],
    price:892, art:"win", accent:"#36d7c9"},
 
+  /* ===== NUEVAS · sin sistema operativo (efectivo + $100) ===== */
+
+  {brand:"HP", tags:["HP"], t:"HP · Intel Core i5 · 12ª Gen",
+   specs:["Intel <b>Core i5</b> 12ª Gen","<b>16GB</b>","<b>512GB</b> SSD","15.6\""],
+   price:557, art:"win", accent:"#36d7c9"},
+
   {brand:"HP", tags:["HP"], t:"HP · AMD Ryzen 5",
    specs:["AMD <b>Ryzen 5</b>","<b>16GB</b>","<b>512GB</b> SSD","15.6\""],
-   price:709, art:"win", accent:"#36d7c9"},
+   price:735, art:"win", accent:"#36d7c9"},
+
+  {brand:"Lenovo", tags:["Lenovo"], t:"Lenovo · Intel Core i3 · 13ª Gen",
+   specs:["Intel <b>Core i3</b> 13ª Gen","<b>8GB</b>","<b>512GB</b> SSD","15.6\""],
+   price:662, art:"win", accent:"#ff5a6e"},
 
   {brand:"Lenovo", tags:["Lenovo"], t:"Lenovo · Ryzen 5",
    specs:["AMD <b>Ryzen 5</b>","<b>16GB</b>","<b>512GB</b> SSD","15.6\""],
-   price:699, art:"win", accent:"#ff5a6e"},
+   price:753, art:"win", accent:"#ff5a6e"},
 
   {brand:"Lenovo", tags:["Lenovo"], t:"Lenovo · Ryzen 3",
    specs:["AMD <b>Ryzen 3</b>","<b>8GB</b>","<b>512GB</b> SSD","15.6\""],
-   price:576, art:"win", accent:"#ff5a6e"},
+   price:556, art:"win", accent:"#ff5a6e"},
+
+  {brand:"Dell", tags:["Dell"], t:"Dell · Intel Core i5 · 13ª Gen · Táctil",
+   specs:["Intel <b>Core i5</b> 13ª Gen","<b>8GB</b>","<b>512GB</b> SSD","15.6\" Táctil","Win 11"],
+   price:735, art:"win", accent:"#5be8ff", note:"Táctil · Windows 11 · teclado inglés"},
 ];
 
 /* ====== SVG LAPTOP ILLUSTRATIONS ====== */
@@ -404,7 +418,7 @@ function render(filter){
 }
 
 /* ====== FILTERS ====== */
-const cats=['Todas','HP','Lenovo','Apple','Gaming'];
+const cats=['Todas','HP','Lenovo','Dell','Apple','Gaming'];
 const fbar=document.getElementById('filters');
 cats.forEach((c,idx)=>{
   const b=document.createElement('button');
